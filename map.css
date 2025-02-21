@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+/* 3.2 */
+#map svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    /* background: yellow;
+    opacity: 50%; */
+}
+
+/* 5.1 */
+header {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+label div {
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    align-items: right; 
+}
+
+#any-time {
+    color: gray;
+    font-style: italic;
+    font-weight: normal; /* Ensure it's not bold */
+}
+
+#time-slider {
+    width: 250px;
+    cursor: pointer;
+}
+
+time {
+    font-weight: bold;
+    display: block;
+}
+
+em {
+    color: gray;  
+    font-style: italic;
+    display: inline-block;
+    min-width: 80px; 
+    text-align: right;
+}
